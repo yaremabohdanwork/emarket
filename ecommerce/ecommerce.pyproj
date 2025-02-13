@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Name>ecommerce</Name>
+    <RootNamespace>ecommerce</RootNamespace>
+    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>05825a58-f3bf-474f-8b5d-0700834ba219</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{5F0BE9CA-D677-4A4D-8806-6076C0FAAD37};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>manage.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <LaunchProvider>Django launcher</LaunchProvider>
+    <DjangoSettingsModule>ecommerce.settings</DjangoSettingsModule>
+    <OutputPath>.</OutputPath>
+    <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="accounts\admin.py" />
+    <Compile Include="accounts\apps.py" />
+    <Compile Include="accounts\migrations\__init__.py" />
+    <Compile Include="accounts\models.py" />
+    <Compile Include="accounts\tests.py" />
+    <Compile Include="accounts\views.py" />
+    <Compile Include="accounts\__init__.py" />
+    <Compile Include="addresses\admin.py" />
+    <Compile Include="addresses\apps.py" />
+    <Compile Include="addresses\migrations\__init__.py" />
+    <Compile Include="addresses\models.py" />
+    <Compile Include="addresses\tests.py" />
+    <Compile Include="addresses\views.py" />
+    <Compile Include="addresses\__init__.py" />
+    <Compile Include="analytics\admin.py" />
+    <Compile Include="analytics\apps.py" />
+    <Compile Include="analytics\migrations\__init__.py" />
+    <Compile Include="analytics\models.py" />
+    <Compile Include="analytics\tests.py" />
+    <Compile Include="analytics\views.py" />
+    <Compile Include="analytics\__init__.py" />
+    <Compile Include="billing\admin.py" />
+    <Compile Include="billing\apps.py" />
+    <Compile Include="billing\migrations\__init__.py" />
+    <Compile Include="billing\models.py" />
+    <Compile Include="billing\tests.py" />
+    <Compile Include="billing\views.py" />
+    <Compile Include="billing\__init__.py" />
+    <Compile Include="carts\admin.py" />
+    <Compile Include="carts\apps.py" />
+    <Compile Include="carts\migrations\__init__.py" />
+    <Compile Include="carts\models.py" />
+    <Compile Include="carts\tests.py" />
+    <Compile Include="carts\views.py" />
+    <Compile Include="carts\__init__.py" />
+    <Compile Include="manage.py" />
+    <Compile Include="ecommerce\__init__.py" />
+    <Compile Include="ecommerce\settings.py" />
+    <Compile Include="ecommerce\urls.py" />
+    <Compile Include="ecommerce\wsgi.py" />
+    <Compile Include="marketing\admin.py" />
+    <Compile Include="marketing\apps.py" />
+    <Compile Include="marketing\migrations\__init__.py" />
+    <Compile Include="marketing\models.py" />
+    <Compile Include="marketing\tests.py" />
+    <Compile Include="marketing\views.py" />
+    <Compile Include="marketing\__init__.py" />
+    <Compile Include="orders\admin.py" />
+    <Compile Include="orders\apps.py" />
+    <Compile Include="orders\migrations\__init__.py" />
+    <Compile Include="orders\models.py" />
+    <Compile Include="orders\tests.py" />
+    <Compile Include="orders\views.py" />
+    <Compile Include="orders\__init__.py" />
+    <Compile Include="products\admin.py" />
+    <Compile Include="products\apps.py" />
+    <Compile Include="products\migrations\__init__.py" />
+    <Compile Include="products\models.py" />
+    <Compile Include="products\tests.py" />
+    <Compile Include="products\views.py" />
+    <Compile Include="products\__init__.py" />
+    <Compile Include="search\admin.py" />
+    <Compile Include="search\apps.py" />
+    <Compile Include="search\migrations\__init__.py" />
+    <Compile Include="search\models.py" />
+    <Compile Include="search\tests.py" />
+    <Compile Include="search\views.py" />
+    <Compile Include="search\__init__.py" />
+    <Compile Include="tags\admin.py" />
+    <Compile Include="tags\apps.py" />
+    <Compile Include="tags\migrations\__init__.py" />
+    <Compile Include="tags\models.py" />
+    <Compile Include="tags\tests.py" />
+    <Compile Include="tags\views.py" />
+    <Compile Include="tags\__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="accounts\" />
+    <Folder Include="accounts\migrations\" />
+    <Folder Include="accounts\templates\" />
+    <Folder Include="addresses\" />
+    <Folder Include="addresses\migrations\" />
+    <Folder Include="addresses\templates\" />
+    <Folder Include="analytics\" />
+    <Folder Include="analytics\migrations\" />
+    <Folder Include="analytics\templates\" />
+    <Folder Include="billing\" />
+    <Folder Include="billing\migrations\" />
+    <Folder Include="billing\templates\" />
+    <Folder Include="carts\" />
+    <Folder Include="carts\migrations\" />
+    <Folder Include="carts\templates\" />
+    <Folder Include="ecommerce\" />
+    <Folder Include="marketing\" />
+    <Folder Include="marketing\migrations\" />
+    <Folder Include="marketing\templates\" />
+    <Folder Include="orders\" />
+    <Folder Include="orders\migrations\" />
+    <Folder Include="orders\templates\" />
+    <Folder Include="products\" />
+    <Folder Include="products\migrations\" />
+    <Folder Include="products\templates\" />
+    <Folder Include="search\" />
+    <Folder Include="search\migrations\" />
+    <Folder Include="search\templates\" />
+    <Folder Include="tags\" />
+    <Folder Include="tags\migrations\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="accounts\templates\index.html" />
+    <Content Include="addresses\templates\index.html" />
+    <Content Include="analytics\templates\index.html" />
+    <Content Include="billing\templates\index.html" />
+    <Content Include="carts\templates\index.html" />
+    <Content Include="marketing\templates\index.html" />
+    <Content Include="orders\templates\index.html" />
+    <Content Include="products\templates\index.html" />
+    <Content Include="requirements.txt" />
+    <Content Include="search\templates\index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="readme.html">
+      <SubType>WebBrowser</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="env\">
+      <Id>env</Id>
+      <Version>3.6</Version>
+      <Description>env (Python 3.6 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
